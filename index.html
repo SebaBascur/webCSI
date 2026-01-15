@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CSI Integral | Seguridad Integral</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "navy": "#002147",
+              "cyan-accent": "#00CCFF",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* WhatsApp Floating Button */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-whatsapp img {
+  width: 36px;
+  height: 36px;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.45);
+}
+
+
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+
+</div>
+<div>
+<img src="assets/img/iso_final.png" style="width: 180px; ;" alt="CSI Integral Logo">
+
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Servicios</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#solutions">Soluciones</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">Nosotros</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contacto</a>
+</nav>
+<a
+  href="https://web.whatsapp.com/send?phone=56945888786&text=Hola!%20Quiero%20Cotizar"
+  target="_blank"
+  class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20 inline-flex items-center justify-center"
+>
+  Cotizar Ahora
+</a>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+    
+<!-- Simulated Video Background using Gradients and Overlay -->
+<div class="absolute inset-0 bg-navy/80 z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="Futuristic smart city at night with digital data overlays" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6WgKkJrWY49xzIccQg04Vx5EPzQCMYec4b6h0TL4sHjVZVyKDXFelfnRd_ROp8IBeH_KY934HU9Y2mzgBkDkrCeVWZycUFbQ3tXAaJCPcPTsEp1SZsVbDQRqtOO_m00svGvrunKsestVP4MMwGaqmy15Ey6h_lVYAbYFdb9rjwBic4E7yol4NFPiEynGREsNZNSVPkPeVDBMHAlKlO-yjxacCyK-cr-1W_ki8SiphqeC7zVyKjxIHhs-9D4Jw5j1XXsbPapTV2So');"></div>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 min-h-[85vh] flex flex-col items-center justify-center text-center">
+<div class="max-w-4xl space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-accent/10 border border-cyan-accent/20 text-cyan-accent text-xs font-bold uppercase tracking-widest">
+<span class="flex h-2 w-2 rounded-full bg-cyan-accent"></span>
+                    Innovación en seguridad
+                </div>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tighter">
+                    Soluciones de Seguridad <span class="text-cyan-accent">para Empresas y Hogares</span>
+                </h1>
+<p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+  Diseñamos, instalamos y monitoreamos sistemas de seguridad electrónica para hogares y empresas, integrando tecnología confiable, soporte técnico local y monitoreo permanente.
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a
+  href="https://web.whatsapp.com/send?phone=56945888786&text=Hola!%20Quiero%20Solicitar%20una%20Cotización"
+  target="_blank"
+  class="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all shadow-xl shadow-primary/30 inline-flex items-center justify-center"
+>
+  Solicitar Cotización
+</a>
+<button class="w-full sm:w-auto glass-effect hover:bg-white/10 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all">
+  Hablar con un Especialista
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Real Installation Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Imagen -->
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+        <img
+          src="assets/img/484932791_1156924649467896_7722695805463086796_n.jpg"
+          alt="Instalación real de sistema de seguridad CSI Integral"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-navy/20"></div>
+
+        <!-- Badge -->
+        <div class="absolute top-6 left-6 glass-effect px-4 py-2 rounded-full text-white text-sm font-bold">
+          Instalación Real
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="space-y-6">
+        <p class="text-primary font-bold uppercase tracking-widest text-sm">
+          Trabajo en Terreno
+        </p>
+
+        <h2 class="text-4xl font-bold text-navy dark:text-white leading-tight">
+          Seguridad Instalada por Nuestro Equipo
+        </h2>
+
+        <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+          Cada sistema es instalado por técnicos especializados de CSI Integral,
+          asegurando una implementación correcta, visible y disuasiva para la
+          protección efectiva de hogares y empresas.
+        </p>
+
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span class="font-medium">Instalación profesional certificada</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span class="font-medium">Señalización visible y disuasiva</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <span class="font-medium">Integración con monitoreo y alarmas</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Services Header -->
+<section class="pt-24 pb-12 bg-background-light dark:bg-background-dark" id="services">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="space-y-4">
+<p class="text-primary font-bold uppercase tracking-widest text-sm">Experiencia en Seguridad</p>
+<h2 class="text-4xl font-bold text-navy dark:text-white leading-tight">Soluciones de Seguridad Integral</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-md">
+                    Diseñamos e implementamos soluciones de seguridad electrónica para hogares y empresas,
+  adaptadas a cada necesidad y con soporte técnico especializado.
+                </p>
+</div>
+<!-- TextGrid Services -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Access Control -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">fingerprint</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-navy dark:text-white">Control de Acceso</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                             Sistemas de control de acceso biométrico, tarjetas y credenciales,ideales para regular ingresos, reforzar la seguridad y proteger áreas críticas.
+                        </p>
+</div>
+</div>
+<!-- CCTV -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">videocam</span>
+</div>
+<div class="space-y-3">
+<h3 class="text-xl font-bold text-navy dark:text-white">Cámaras de Seguridad (CCTV)</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                            Sistemas de videovigilancia HD con grabación continua, acceso remoto
+  y monitoreo para hogares, oficinas e instalaciones industriales.
+                        </p>
+</div>
+</div>
+
+<!-- Electric Fence -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+  <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+    <span class="material-symbols-outlined text-3xl">bolt</span>
+  </div>
+  <div class="space-y-3">
+    <h3 class="text-xl font-bold text-navy dark:text-white">
+      Cerco Eléctrico
+    </h3>
+    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+      Sistemas de cerco eléctrico disuasivo para perímetros de hogares y empresas,
+      integrados a alarmas y monitoreo para una protección perimetral efectiva.
+    </p>
+  </div>
+</div>
+<!-- Citofonía -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-8 hover:border-primary/50 transition-all hover:shadow-2xl hover:shadow-primary/5">
+  <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+    <span class="material-symbols-outlined text-3xl">doorbell</span>
+  </div>
+  <div class="space-y-3">
+    <h3 class="text-xl font-bold text-navy dark:text-white">
+      Citofonía y Video Citofonía
+    </h3>
+    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+      Sistemas de citofonía y video citofonía para controlar accesos de forma segura,
+      permitiendo comunicación y visualización remota desde el hogar, oficina o condominio.
+    </p>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- Stats & Why Choose Us -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900/30" id="solutions">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden bg-navy">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="High tech server room with blue neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSoXygJj4tsNrWR2e6F0U4yOn7quMvO8MErSSGEaQ7c2tslcencaF3j8O_6azxCKk9IxHAQT-C0ob8lTUF7R9qnjC_kw7QPx76dNiR_w8UQioTQ_fW9fMmfEXH-_YiHHWIoe8lpmg-KPPTc33dql_TpMd9r2Hs_1AIfOhqm7L5D7b13qUPUaIXH0_bHB99WFDnmyltnmIFznKn5-e4hK-whBqxyR-KaaylWa6Z2pPdLhz1_BN7Dvi3DTeIcrTWamKmkNwnYp5eQ64"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent"></div>
+</div>
+<!-- Floating Stat Card -->
+<div class="absolute -bottom-8 -right-8 glass-effect bg-white/10 dark:bg-slate-800/80 p-8 rounded-2xl shadow-2xl border border-white/20 max-w-[240px]">
+  <p class="text-primary font-bold text-4xl mb-1">+10 años</p>
+  <p class="text-navy dark:text-white font-bold">Protegiendo Personas y Empresas</p>
+  <p class="text-slate-500 dark:text-slate-400 text-xs mt-2">
+    Experiencia comprobada en seguridad electrónica, monitoreo y protección perimetral.
+  </p>
+</div>
+</div>
+
+<div class="space-y-10">
+<div class="space-y-4">
+  <p class="text-primary font-bold uppercase tracking-widest text-sm">
+    Por qué elegir CSI Integral
+  </p>
+  <h2 class="text-4xl font-bold text-navy dark:text-white leading-tight">
+    Seguridad Integral Diseñada para tu Hogar y tu Empresa
+  </h2>
+  <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+    En CSI Integral desarrollamos soluciones de seguridad confiables y escalables,
+    combinando tecnología, experiencia y monitoreo profesional para proteger lo que más importa.
+  </p>
+</div>
+<!-- Stats Row -->
+<div class="grid grid-cols-2 gap-4">
+  <div class="flex flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+    <p class="text-slate-500 dark:text-slate-400 text-sm font-medium">
+      Atención y Soporte
+    </p>
+    <p class="text-navy dark:text-white tracking-tight text-3xl font-bold">
+      24/7
+    </p>
+    <div class="h-1 w-12 bg-primary rounded-full mt-2"></div>
+  </div>
+  <div class="flex flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+    <p class="text-slate-500 dark:text-slate-400 text-sm font-medium">
+      Experiencia
+    </p>
+    <p class="text-navy dark:text-white tracking-tight text-3xl font-bold">
+      +10 Años
+    </p>
+    <div class="h-1 w-12 bg-cyan-accent rounded-full mt-2"></div>
+  </div>
+</div>
+
+<ul class="space-y-4">
+  <li class="flex items-center gap-3">
+    <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+    <span class="font-medium">
+      Instalación profesional certificada
+    </span>
+  </li>
+  <li class="flex items-center gap-3">
+    <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+    <span class="font-medium">
+      Monitoreo y respuesta ante eventos de seguridad
+    </span>
+  </li>
+  <li class="flex items-center gap-3">
+    <span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+    <span class="font-medium">
+      Soporte técnico en terreno y atención local
+    </span>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA Section -->
+<section class="py-24" id="contact">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="relative bg-navy rounded-[2rem] overflow-hidden p-10 md:p-20">
+<!-- Background Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+  <div class="max-w-xl text-center md:text-left space-y-6">
+    <h2 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-tight">
+      Protege tu hogar o empresa hoy
+    </h2>
+    <p class="text-slate-300 text-lg" style="text-wrap: balance;">
+      Asesoría sin costo y solución de seguridad
+      diseñada según tus necesidades reales.
+    </p>
+  </div>
+  <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+    <button class="bg-cyan-accent hover:bg-cyan-accent/90 text-navy px-10 py-5 rounded-xl font-black text-lg transition-all shadow-xl shadow-cyan-accent/20">
+      Cotiza
+    </button>
+    <button class="border border-white/30 text-white hover:bg-white/10 px-10 py-5 rounded-xl font-bold text-lg transition-all">
+      Contactanos
+    </button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- WhatsApp Floating Button -->
+<a
+  href="https://api.whatsapp.com/send?phone=56920202082&text=Hola!%20Quiero%20Cotizar"
+  class="btn-whatsapp"
+  target="_blank"
+  aria-label="Contactar por WhatsApp"
+>
+  <img
+    src="https://nuevo-alpha.vercel.app/assets/icons8-whatsapp-96.svg"
+    alt="WhatsApp CSI Integral"
+    loading="lazy"
+  />
+</a>
+
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-center md:text-left">
+
+      <!-- Logo -->
+      <div class="flex justify-center md:justify-start">
+        <img
+          src="assets/img/3-escudos.png"
+          alt="CSI Integral Logo"
+          class="w-[180px]"
+        />
+      </div>
+
+      <!-- Links + Email -->
+      <div class="flex flex-col items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+        <div class="flex gap-6 flex-wrap justify-center">
+          <a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+          <a class="hover:text-primary transition-colors" href="#">Términos del Servicio</a>
+
+        </div>
+
+        <a
+          href="mailto:contacto@csintegral.cl"
+          class="font-medium hover:text-primary transition-colors"
+        >
+          contacto@csintegral.cl
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-sm text-slate-400 text-center md:text-right">
+        © 2014 CSI Integral Seguridad Integral.
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
